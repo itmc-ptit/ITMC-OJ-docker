@@ -18,4 +18,5 @@ COPY repo/package.json .
 COPY repo/package-lock.json .
 RUN npm install && \
     pip3 install -r requirements.txt && \
-    pip3 install -r additional_requirements.txt
+    pip3 install -r additional_requirements.txt && \
+    pip3 install lxml_html_clean mysqlclient==2.1.1 websocket-client
